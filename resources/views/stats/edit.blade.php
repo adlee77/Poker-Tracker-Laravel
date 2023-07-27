@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container entry-container">
     <form action="/stats/update/{{$stat->id}}">
         <label for="cname">Casino Name:</label><br>
         <input value={{$stat->casino_name}} type="text" id="cname" name="cname"><br>

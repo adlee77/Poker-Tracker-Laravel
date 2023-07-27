@@ -60,10 +60,10 @@ class StatsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Stats $stats)
-    {
+    // public function show(Stats $stats)
+    // {
         
-    }
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -92,8 +92,11 @@ class StatsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Stats $stats)
+    public function delete($id)
     {
-        //
+        $stat = Stats::find($id);
+        $stat->delete();
+
+        return redirect('stats');
     }
 }

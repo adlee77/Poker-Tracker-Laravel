@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container entry-container">
     <h2>Log a Session</h2>
     <form action="/stats/submit-session">
         <label for="cname">Casino Name:</label><br>
