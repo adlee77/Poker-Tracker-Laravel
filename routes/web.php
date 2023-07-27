@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/profile', [App\Http\Controllers\ProfileController::class, 'index'])->name('profile');
+Route::get('/stats', [App\Http\Controllers\StatsController::class, 'index'])->name('stats');
+Route::get('/stats/create', [App\Http\Controllers\StatsController::class, 'create'])->name('create');
+Route::get('/stats/submit-session', [App\Http\Controllers\StatsController::class, 'store'])->name('store');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

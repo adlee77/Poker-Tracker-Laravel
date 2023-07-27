@@ -1,6 +1,12 @@
 body {
-    background: url('../../poker-img.jpg');
-    background-size: cover;
+    color: white;
+    .navbar {
+        background-color: #4E4E50;
+        a {
+            color: white;
+        }
+        
+    }
 
     .app-title {
         min-height: 400px;
@@ -13,16 +19,62 @@ body {
         h1 {
             font-family: Arial,Helvetica,sans-serif;
             font-size: 100px;
-            color: white;
+            color: #C3073F;
             font-weight: bold;
-            text-shadow: 0.05em 0 black, 0 0.01em black, -0.01em 0 black, 0 -0.01em black, -0.01em -0.01em black, -0.01em 0.01em black, 0.01em -0.01em black, 0.01em 0.01em black;
         }
 
         p {
             font-size: 30px;
-            color: white;
-            text-shadow: 0.05em 0 black, 0 0.01em black, -0.01em 0 black, 0 -0.01em black, -0.01em -0.01em black, -0.01em 0.01em black, 0.01em -0.01em black, 0.01em 0.01em black;
+            color: #C3073F;
         }
     }
+
+    .carousel-inner {
+        .carousel-item {
+            img {
+                width: 500px;
+                margin: auto;
+            }
+        }
+    }
+
+
+    .profile-container {
+        h1 {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 100px;
+            color: #C3073F;
+            font-weight: bold;
+        }
+        h2 {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 80px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    .container {
+        color: white;
+
+        .entry {
+            margin: 10px;
+            border: 1px solid;
+            border-radius: 8px;
+            padding: 10px;
+
+            .title {
+                justify-content: space-between;
+            }
+            .pos {
+                color:greenyellow;
+            }
+            .neg {
+                color: red;
+            }
+        }
+    }
+
 }
 
