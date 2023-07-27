@@ -72,14 +72,29 @@ body {
             .title {
                 justify-content: space-between;
             }
-            .pos {
-                color:greenyellow;
-            }
-            .neg {
-                color: red;
-            }
+            
         }
     }
+    .container {
+        color: white;
+    }
 
+    .welcome-div {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .pos {
+        color:greenyellow;
+    }
+    .neg {
+        color: red;
+    }
+
+    .buttons {
+        color: white;
+        background-color: #4E4E50;
+        border-radius: 8px;
+        border:0
+    }
 }
 

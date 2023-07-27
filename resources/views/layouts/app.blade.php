@@ -19,9 +19,16 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Home') }}
+            @guest
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    Home
+                </a>
+            @else
+            <a class="navbar-brand" href="{{ url('/stats') }}">
+                Profile
             </a>
+            @endguest
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -72,4 +79,5 @@
         @yield('content')
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 </html>

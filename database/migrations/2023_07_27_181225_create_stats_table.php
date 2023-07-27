@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('buyin');
             $table->integer('cashout');
             $table->integer('time_played');
+            $table->integer('user_id');
         });
     }
 
