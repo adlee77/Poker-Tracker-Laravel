@@ -55,10 +55,15 @@ body {
         }
     }
 
-    .container {
+    .stat-container {
         color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
         .entry {
+            width: 47%;
             margin: 10px;
             border: 1px solid;
             border-radius: 8px;

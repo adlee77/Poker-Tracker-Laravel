@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container stat-container">
     @if(count($stats) > 0)
         @foreach($stats as $stat)
-            <div class="entry col-md-6">
+            <div class="entry">
                 <div class="d-flex title"><h3>Casino: {{$stat->casino_name}}</h3>
                     <div>
                         <button>Edit</button>
@@ -25,6 +25,7 @@
                 </div>
             </div>
         @endforeach
+        {{$stats->links()}}
     @else
         <p>No entries found</p>
         <a href="/stats/create">Submit Your First Entry</a>

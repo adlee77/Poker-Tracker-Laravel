@@ -13,7 +13,7 @@ class StatsController extends Controller
      */
     public function index()
     {
-        $stats = Stats::orderBy('created_at', 'desc')->get();
+        $stats = Stats::orderBy('created_at', 'desc')->paginate(6);
         return view('stats/index')->with('stats', $stats);
     }
 
